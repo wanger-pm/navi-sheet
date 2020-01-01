@@ -1,0 +1,12 @@
+% linux
+
+# sort processes by used memory(head 10)
+ps -aux --sort -pmem | head -n 10
+
+# sort processes by used cpu(head 10)
+ps -aux --sort -pcpu | head -n 10
+
+# view the process tree
+pstree
+
+#

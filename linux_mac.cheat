@@ -1,0 +1,78 @@
+% linux, mac
+
+##### find command #####
+
+# find a file or directory start with "index" in the current directory
+find . -name 'index*'
+
+# find the directory named "index" in the current directory
+find . -type d -name 'index'
+
+# find the file named "index" in the current directory
+find . -type f -name 'index'
+
+# count the total number of lines in the .ts or .txs or .less file in the render directory 
+find src -name '*.ts*' -o -name '*.less' | xargs wc -l
+
+##### tar command #####
+
+# zip folders
+tar zcvf FileName.tar.gz DirName
+
+# unzip folders
+tar zxvf FileName.tar.gz
+
+# view files in .tar.gz file
+tar tvf log.tar.gz
+
+##### zip command #####
+
+# zip file
+zip test.zip test.html
+
+# zip folders
+zip -r demo.zip demo
+
+# unzip file
+unzip demo.zip
+
+#########
+
+# view the size of the current directory
+du -sh ./
+
+# hard link
+ln index.md index2.md
+
+# soft link
+ln -s index.md index2.md
+
+# watch nginx program information
+ps aux | grep 'nginx'
+
+# download
+scp -r vultr:~/test ./
+
+# upload
+scp -r test vultr:~/
+
+# give execute permissions to the current user
+chmod u+x file
+
+# download file
+wget http://wordpress.org/latest.tar.gz
+
+# download file
+curl -L http://wordpress.org/latest.tar.gz -o latest.tar.gz
+
+# view file type
+file filename
+
+# view if the port is available
+telnet www.baidu.com 80
+
+# view current user
+whoami
+
+# view the current syatem name
+uname -a

@@ -1,0 +1,49 @@
+% git
+
+# view changes for a specific commit
+git show [commit]
+
+# view changes for specific commits and specific files
+git show [commit]:[filename]
+
+# view the history commit of a file
+git log -p [filename]
+
+# view remote git address
+git remote -v
+
+# a file returns a specific version
+git reset [commit] [filename]
+
+# show all commit change
+git commit -v 
+
+# replace the tip of the current branch by creating a new commit 
+git commit --amend -m [message]
+
+# switch to the previous branch
+git checkout -
+
+# select a commit and merge it into current branch
+git cherry-pick [commit]
+
+# delete remote branch
+git push origin --delete [branch-name]
+
+# show differences between stage and workspace
+git diff
+
+# config personal information
+git config --global user.name "wanger"
+git config --global user.email wanger@example.com
+
+# 以下是不常用命令 #
+
+# show all submitted users, sorted by number of submit
+git shortlog -sn
+
+# show what revision and author last modified
+git blame [file]
+
+# how much code changed in 10 days
+git diff --shortstat "@{10 day ago}"

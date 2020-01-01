@@ -1,0 +1,76 @@
+% docker
+
+# show all images
+docker images
+
+# build an image from a Dockerfile
+docker build -t [dockerName] .
+
+# build an image from a Dockerfile, and specify Dockerfile path
+docker build -t [dockerName] -f [Dockerfile path] .
+
+# run docker (add -d run in background)
+docker run -p 4000:80 [dockerName]
+
+# mount a volume, in -v parameter, before is the host directory, after is the container directory
+docker run -it -v /Users/erwang/Desktop/docker-test/soft:/test alpine
+
+# show running containers
+docker ps 
+docker container ls
+
+# show all containers
+docker ps -a
+docker container ls -a
+
+# stop one or more running containers
+docker stop <hash> [<hash>...]
+
+# kill one or more running containers
+docker kill <hash> [<hash>...]
+
+# start one or more stopped containers
+docker start <hash> [<hash>...]
+
+# remove one or more containers
+docker rm <hash> [<hash>...]
+
+# remove all Docker containers
+docker rm $(docker ps -a -q) 
+
+# remove all unused containers, networks, images
+docker system prune
+
+# remove all unused containers, networks, images, volumes
+docker system prune --volumes
+
+# remove all stopped containers
+docker container prune
+
+# create a tag TARGET_IMAGE that refers to SOURCE_IMAGE
+docker tag <image> username/repository:tag
+
+# push an image or a repository to a registry
+docker push username/repository:tag
+
+# create a new image from a container’s changes
+docker commit <hash> <imagename>
+
+# show the history of an image
+docker history <imagename>
+
+# interactive run image
+docker run -it <imagename> /bin/bash
+
+# interactive into a running container
+docker exec -it <hash> /bin/bash 
+
+# show low-level information on Docker objects
+docker inspect [iamgename|hash]
+
+# copy the host /www/runoob directory to the /www directory of the container 96f7f14e99ab
+docker cp /www/runoob 96f7f14e99ab:/www/
+
+# copy the /www directory of the container 96f7f14e99ab to the /tmp directory of the host
+docker cp 96f7f14e99ab:/www /tmp/
+
