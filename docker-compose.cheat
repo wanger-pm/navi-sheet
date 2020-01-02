@@ -1,0 +1,13 @@
+% docker-compose
+
+# start server
+docker-compose up
+
+# stop server
+docker-compose stop
+
+# run into a running server
+docker-compose exec [name] /bin/bash
+
+# stop and remove server
+docker-compose down
