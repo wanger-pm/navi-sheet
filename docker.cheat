@@ -74,3 +74,5 @@ docker cp /www/runoob 96f7f14e99ab:/www/
 # copy the /www directory of the container 96f7f14e99ab to the /tmp directory of the host
 docker cp 96f7f14e99ab:/www /tmp/
 
+# stop all container
+docker container stop $(docker container ls -aq)
