@@ -1,0 +1,4 @@
+% nginx
+
+# test the configuration file.
+nginx -t -c nginx.conf
