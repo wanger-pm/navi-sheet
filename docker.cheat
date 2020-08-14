@@ -56,6 +56,9 @@ docker push username/repository:tag
 # create a new image from a container’s changes
 docker commit <hash> <imagename>
 
+# save image to a tar 
+docker save -o <out-put-path> <image>
+
 # show the history of an image
 docker history <imagename>
 
