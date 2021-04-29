@@ -2,3 +2,6 @@
 
 # open URL
 open http://google.com
+
+# open by vscode
+code .
