@@ -1,0 +1,14 @@
+# force termination of current command
+ctrl + c
+
+# clear screen 
+ctrl + l
+
+# move the cursor to the beginning of the command line
+ctrl + a
+
+# move the cursor to the end of the command line
+ctrl + e
+
+# remove command line
+ctrl + u

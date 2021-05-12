@@ -1,19 +1,5 @@
 % linux, mac
 
-##### find command #####
-
-# find a file or directory start with "index" in the current directory
-find . -name 'index*'
-
-# find the directory named "index" in the current directory
-find . -type d -name 'index'
-
-# find the file named "index" in the current directory
-find . -type f -name 'index'
-
-# count the total number of lines in the .ts or .txs or .less file in the render directory 
-find src -name '*.ts*' -o -name '*.less' | xargs wc -l
-
 ##### tar command #####
 
 # zip folders
@@ -74,5 +60,5 @@ telnet www.baidu.com 80
 # view current user
 whoami
 
-# view the current syatem name
+# view the current system name
 uname -a

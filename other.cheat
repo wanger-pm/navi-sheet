@@ -1,2 +1,5 @@
 # ssh 无密码登录(详情在 learn-notes 里查看)
 ssh-copy-id aliyun
+
+# 彩色显示天气
+curl -s wttr.in | lolcat

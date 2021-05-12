@@ -1,0 +1,4 @@
+% grep
+
+# 在文件夹下递归搜索字段,并高亮搜索词（.表示当前目录）
+grep -rn "text" . --color=auto

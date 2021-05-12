@@ -8,5 +8,3 @@ ps -aux --sort -pcpu | head -n 10
 
 # view the process tree
 pstree
-
-#
