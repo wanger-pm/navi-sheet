@@ -1,0 +1,16 @@
+% openssl
+
+# 查看 openssl 版本 
+openssl version
+
+# 查看 openssl 支持的 hash 算法 
+openssl list-message-digest-algorithms
+
+# 查看 openssl 支持的 对称加密 算法 
+openssl list-cipher-commands
+
+# 通过 openssl 创建一个 rsa 私钥
+openssl genrsa -out rsa_private.key 1024
+
+# 私钥创建对应的公钥
+openssl rsa -in rsa_private.key -pubout -out rsa_public.key

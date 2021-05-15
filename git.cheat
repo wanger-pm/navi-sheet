@@ -12,6 +12,9 @@ git log -p [filename]
 # view remote git address
 git remote -v
 
+# change remote repo origin
+git remote set-url origin git@github.com:xxxxx.git
+
 # a file returns a specific version
 git reset [commit] [filename]
 
