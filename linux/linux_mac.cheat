@@ -2,10 +2,10 @@
 
 ##### tar command #####
 
-# zip folders
+# zip directory
 tar zcvf FileName.tar.gz DirName
 
-# unzip folders
+# unzip directory
 tar zxvf FileName.tar.gz
 
 # view files in .tar.gz file
@@ -16,8 +16,11 @@ tar tvf log.tar.gz
 # zip file
 zip test.zip test.html
 
-# zip folders
+# zip directory
 zip -r demo.zip demo
+
+# zip directory but excluded specific subdirectories
+zip -r demo.zip ./ -x "node_modules/*"
 
 # unzip file
 unzip demo.zip
