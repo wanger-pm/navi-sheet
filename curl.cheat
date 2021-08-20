@@ -1,0 +1,4 @@
+% curl
+
+# http post request
+curl -d "param1=value1&param2=value2" -X POST http://localhost:3001/article
