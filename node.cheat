@@ -1,0 +1,4 @@
+% node
+
+# node run ts code with ts-node
+node -r ts-node/register index.ts 
