@@ -1,0 +1,19 @@
+% npm
+
+# list installed package
+npm ls [react]
+
+# view package info
+npm show [react]
+
+# create alpha tag
+npm version prerelease --no-git-tag-version --preid alpha
+
+# create patch tag
+npm version patch --no-git-tag-version
+
+# npm publish (latest)
+npm publish . --access public
+
+# npm publish (with tag)
+npm publish . --access public --tag alpha
