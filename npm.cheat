@@ -17,3 +17,6 @@ npm publish . --access public
 
 # npm publish (with tag)
 npm publish . --access public --tag alpha
+
+# npm show versions
+npm view xxx versions
